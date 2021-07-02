@@ -1,38 +1,70 @@
-.App {
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content h4 {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.photo-container {
+  width: 23%;
+  margin: 1% 1% 2%;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  border-radius: 10px;
+}
+
+.content img {
+  width: 100%;
+  height: 10em;
+}
+
+
+.no-content {
+  text-align: center;
+  margin-top: 3%;
+}
+
+form {
+  display: block;
+  margin-top: 3%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, button {
+  border: 1px solid lightgray;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+input {
+  width: 20%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+button {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .photo-container {
+      width: 31%;
+      margin: 1% 1%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .photo-container {
+      width: 48%;
+      margin: 1% 1%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 480px) {
+  .photo-container {
+      width: 98%;
+      margin: 1% 1%;
   }
 }
